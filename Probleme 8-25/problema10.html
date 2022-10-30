@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img src="https://www.howtogeek.com/wp-content/uploads/2017/06/gaming-mouse-with-a-blue-glow.jpeg?height=200p&trim=2,2,2,2&crop=16:9" alt="missing pic">
+    <button onclick="change()">Click aici</button>
+
+</body>
+<script>
+    let show = true;
+    function change(){
+        image = document.getElementsByTagName("img")[0];
+        if(show){
+            image.src = "";
+            show = !show;
+        }else{
+            image.src = "https://www.howtogeek.com/wp-content/uploads/2017/06/gaming-mouse-with-a-blue-glow.jpeg?height=200p&trim=2,2,2,2&crop=16:9";
+            show = !show;
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        border-radius: 20px;
+    }
+</style>
+<body>
+    <img onmousedown="first()" onmouseup="second()" src="https://smaller-pictures.appspot.com/images/dreamstime_xxl_65780868_small.jpg" alt="">
+</body>
+<script>
+    function first(){
+        document.getElementsByTagName("img")[0].src = "https://pbs.twimg.com/profile_images/875749462957670400/T0lwiBK8_400x400.jpg";
+    }
+
+    function second(){
+        document.getElementsByTagName("img")[0].src = "https://smaller-pictures.appspot.com/images/dreamstime_xxl_65780868_small.jpg";
+    }
+</script>
+</html>

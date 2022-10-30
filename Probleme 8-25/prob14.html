@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input{
+        background-color: yellow;
+    }
+</style>
+<body>
+    <input type="password">
+    <input type="password">
+    <button onclick="merge()">Click aici</button>
+</body>
+
+<script>
+    function merge(){
+        inputArr = document.getElementsByTagName("input");
+        for(let i = 0; i<inputArr.length; i++){
+            inputArr[i].value = "merge";
+        }
+    }
+</script>
+
+</html>

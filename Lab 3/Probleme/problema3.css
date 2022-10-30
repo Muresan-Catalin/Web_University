@@ -1,0 +1,30 @@
+.div-principal{
+    display: flex;
+}
+
+.div1{
+    width: 200px;
+    height: 200px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+    background-color: rgba(167, 158, 158, 0.3);
+}
+
+.div2{
+    width: 200px;
+    height: 200px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+    background-color: rgba(167, 158, 158, 0.3);
+}
+
+.div3{
+    width: 200px;
+    height: 200px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+    background-color: rgba(167, 158, 158, 0.3);
+}

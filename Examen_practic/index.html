@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>examen</title>
+
+<style>
+    #range{
+        background-color: rgba(123, 189, 91, 0.7);
+    }
+
+    #suprafata{
+        color: hsla(120, 100%, 50%, 0.3);
+    }
+
+    #numar{
+        color: hsla(120, 100%, 50%, 0.3);
+    }
+</style>
+    
+</head>
+
+<body>
+
+    <form id="form" action="script.php">
+        <input id="lungime" type="number">Lungime_casa
+        <input id="latime" type="number">Latime_casa
+    </form>
+
+    <h1 id="suprafata">Suprafata</h1>
+    <h1 id="numar"></h1>
+    <input onclick="arie()" id = "submit" type="submit">
+</body>
+    
+<script>
+        function arie(){
+            f = document.getElementById("form");
+            s = document.getElementById("suprafata");
+            numar = document.getElementById("numar");
+            L = document.getElementById("lungime").value;
+            l = document.getElementById("latime").value;
+            suprafata = L*l;
+            arie = suprafata * 100;
+            s.innerHTML = suprafata.toString();
+            numar.innerHTML = arie.toString();
+        }
+</script>
+
+</html>

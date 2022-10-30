@@ -1,0 +1,16 @@
+h1{
+    color: red;
+    box-shadow: 3px 3px 7px rgba(96, 55, 255, 1);
+}
+
+#p1{
+    color: rgb(243, 140, 22);
+}
+
+#p2{
+    color: rgba(96, 193, 7, 1);
+}
+
+#p3{
+    color: rgba(217, 193, 93, 0.66);
+}

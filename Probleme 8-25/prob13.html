@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input{
+        border: 2px blue dotted;
+        
+    }
+</style>
+<body>
+    <input onblur="swap()" id="tx1" type="text">
+    <input id="tx2" type="text">
+</body>
+<script>
+    function swap(){
+        tx1 = document.getElementById("tx1");
+        tx2 = document.getElementById("tx2");
+
+        tx2.value = tx1.value;
+    }
+</script>
+</html>

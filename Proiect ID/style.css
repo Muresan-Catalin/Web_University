@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #24252A;
+}
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #24252A;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #0088a9;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+    z-index: 0;
+}
+
+.centered {
+    font-family: "Montserrat", sans-serif;
+    font-size: 100px;
+    text-shadow: 0 0 10px white;
+    background: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    div.centered {
+      font-size: 80px;
+    }
+}
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    div.centered {
+      font-size: 30px;
+    }
+}
+
+.text_descriere{
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    text-shadow: 0 0 10px white;
+}
+
+.img_slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_slider p{
+    align-self: flex-start;
+}
+
+.img_slider img{
+    align-self: flex-end;
+}
+
+.staff{
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 100px;
+    text-shadow: 0 0 10px white;
+    margin-top: 200px;
+}
+
+.cards-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-top: 130px;
+}
+
+.cards-section .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.cards-section .card:hover{
+    height: 420px;
+}
+
+.cards-section .card .imgBx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -70px;
+    left: 4px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cards-section .card .imgBx img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.cards-section .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+}
+
+.cards-section .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+.orar{
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    text-shadow: 0 0 10px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2em;
+    margin-top: 50px;
+    height: 300px;
+    width: 100%;
+}
+
+.locatie{
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    text-shadow: 0 0 10px white;
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mapouter{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+footer{
+    background: #111;
+    height: auto;
+    width: 100%;
+    color: #fff;
+    margin-top: 100px;
+  }
+  
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+  }
+  
+  .footer-content p{
+    max-width: 500px;
+    margin:10px auto;
+    line-height: 28px;
+    font-size: 14px;
+  }
+  
+  .footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+  }
+

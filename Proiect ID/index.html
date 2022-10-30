@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+   <header>
+       <img src="logo.png" alt="logo image" class="logo" width="100px" height="80px">
+       <nav>
+           <ul class="nav_links">
+               <li><a href="#about">About</a></li>
+               <li><a href="#staff">Staff</a></li>
+               <li><a href="#orar">Locatie</a></li>
+           </ul>
+       </nav>
+       <a href="#" class="cta"><button onclick="contact()">Contact</button></a>
+   </header>
+
+   <div class="container">
+    <img src="coffee.png" alt="coffee" style="width:100%;">
+    <div class="centered">The greatest coffee in your area</div>
+  </div>
+
+    <div class="text_descriere" id="about">
+        <p>Cafeaua noastra este una dintre cele mai bune din oras</p><br>
+        <p>Este procurata din Columbia si Procesata in Elvetia</p><br>
+        <p>Locatia noastra este perfecta pentru persoanele care vor o pauza de la lumea de afara</p><br>
+        <p>Preturi accesibile pentru toata lumea, un staff bine pregatit si o cafea bestiala</p><br>
+    </div>
+
+  <div class="img_slider">
+      <img id="slide" width="450" height="300">
+  </div>
+
+  <br>
+
+  <h1 class="staff" id="staff">Staff</h1>
+
+  <div class="cards-section">
+      <div class="card">
+          <div class="imgBx">
+              <img src="p1.png" alt="">
+          </div>
+          <div class="content">
+              <h2>Maria Olga</h2>
+              <p>Maria este CEO al CoffeeLounge. Ea a venit din Elvetia unde a studiat arta culinara a cafelei si a vrut 
+                  sa aduca o idee noua la noi in tara.</p>
+
+          </div>
+      </div>
+
+      <div class="card">
+        <div class="imgBx">
+            <img src="p2.png" alt="">
+        </div>
+        <div class="content">
+            <h2>Alex Jackson</h2>
+            <p>Alex este managerul de magazin care se ocupa de toti angajatii. El a fost instruit de catre Maria si instruieste mai
+                departe pe toti angajatii
+            </p>
+            
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="imgBx">
+            <img src="p3.png" alt="">
+        </div>
+        <div class="content">
+            <h2>Ariana Xion Ping</h2>
+            <p>Ariana este angajata lunii. Ea a fost cea mai punctuala si muncitoare persoana din aceasta luna,
+                asa ca o punem aici ca un exemplu bun pentru restul angajatilor
+            </p>
+            
+        </div>
+    </div>
+  </div>
+
+  <div class="orar" id="orar" data-scroll>
+    <h1>Orar</h1>
+    <h4>L-V: 8-20</h4>
+    <h4>Sambata: 9-18</h4>
+  </div>
+
+  <div class="locatie" data-scroll>
+    <h2>Locatie</h2>
+    <p>Cafeneaua este situata la FSEGA</p>
+  </div>
+
+  <div class="mapouter">
+      <div class="gmap_canvas">
+          <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=fsega&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+  </div>
+
+    <footer>
+        <div class="footer-content">
+          <h3>CoffeeLounge</h3>
+          <p>All rights reserved to CoffeLounge INC.</p>
+          <ul class="socials">
+            <li><a href="https://www.facebook.com/Salon-Andre-Q-Official-204667996780378/"><i class="fa fa-facebook"></i></a></li>
+          </ul>
+        </div> 
+        <div class="footer-bottom">
+          <p>copyright &copy;2022 CoffeeLounge. Designed by Alex</p>
+        </div>
+      </footer>
+
+</body>
+</html>

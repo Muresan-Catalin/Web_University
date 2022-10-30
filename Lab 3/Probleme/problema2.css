@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+div{
+    width: 600px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 100px 300px 100px 300px;
+    box-shadow: 5px 10px 50px 10px green;
+    background-color: rgba(167, 158, 158, 0.3);
+}
+
+.p1{
+    color: blue;
+    font-family: 'Hurricane', cursive;
+    font-size: 2em;
+    letter-spacing: 10px;
+}
+
+.p2{
+    color: rgba(125, 196, 243, 0.5);
+    font-family: 'Hurricane', cursive;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 450;
+}
+
+.p3{
+    color: red;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    text-align: right;
+}

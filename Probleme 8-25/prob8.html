@@ -1,0 +1,27 @@
+8.Inserati un text cu opacitate de 0,5.
+Acesta primeste o umbra si va fi scris cu fontul monotype corsiva in 
+momentul in care se da click dreapta pe un buton
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p{
+        opacity: 0.5;
+    }
+</style>
+<body>
+    <p id="text">Proba de text</p>
+    <button onclick="shadow()">Click aici</button>
+</body>
+<script>
+    function shadow(){
+        document.getElementById("text").style = "text-shadow: 2px 2px grey; font-family: 'monotype-corsiva'"
+    }
+</script>
+</html>
